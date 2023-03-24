@@ -25,7 +25,7 @@ variable projectPrefix {
 }
 
 variable namespace {
-  default = "ptf-test"
+  default = "pg"
 }
 
 # AWS 
