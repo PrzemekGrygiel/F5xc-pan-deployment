@@ -22,7 +22,7 @@ resource "volterra_nfv_service" "pan-nfv1" {
             for_each = var.pan_ha ? [1] : []
                 content {
                         node_name = format("%s-svc", var.projectPrefix)
-                        aws_az_name = format("%s-a", var.aws_region)  
+                        aws_az_name = format("%sb", var.aws_region)  
                         reserved_mgmt_subnet = false   
                 }
         }
